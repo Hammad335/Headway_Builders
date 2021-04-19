@@ -43,9 +43,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:background="?android:attr/textColorHighlightInverse"
+        android:background="@color/material_on_surface_emphasis_medium"
+        android:backgroundTint="@android:color/holo_orange_light"
         android:fontFamily="@font/audiowide"
-        android:text="ANALYST"
+        android:text="MANAGER"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"/>
