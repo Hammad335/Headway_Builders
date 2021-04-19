@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Headway Builders</string>
+
+    // mainActivity bottom bav tabs
+    <string name="manager">Manager</string>
+    <string name="analyst">Analyst</string>
+
+
+    <!--    // analyst bottom nav tabs-->
+    <string name="home">HOME</string>
+    <string name="EDIT">EDIT</string>
+    <string name="ADD">ADD</string>
+    <string name="PROFILE">PROFILE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    // spinner items -buildingTypes
+    <string-array name="spinner_items">
+
+        <item>Educational Building</item>
+        <item>Institutional Building</item>
+        <item>Business Building</item>
+        <item>Industrial Building</item>
+        <item>Residential Building</item>
+        <item>Multi-Storey Building</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        drawable="@drawable/analyst_home2"
+        text="@string/home"/>
+
+    <tab
+        drawable="@drawable/analyst_add"
+        text="@string/ADD"/>
+
+
+    <tab
+        drawable="@drawable/analyst_profile1"
+        text="@string/PROFILE"/>
+
+
+</tabs>

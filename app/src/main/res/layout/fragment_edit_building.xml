@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analyst.analysteditfrag.AnalystEditFragment"
+    android:backgroundTint="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/buildingDetailsInfoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Edit Details"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/buildingDetailsInfoTxt"
+        android:background="#FF9800"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingDetailsScrollViewRelLayouut"
+        android:layout_below="@+id/buildingDetailsInfoTxt"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_marginBottom="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/buildingManualImageEditBuild"
+                    android:layout_width="340dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/addimg"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Building Type :"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/buildingTypeSpinnerEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:backgroundTint="@color/black"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/spinner_items"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Building Id :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/buildingIdEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Building Name :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/buildingNameEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Building Area (sqft.) :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/buildingAreaEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Number of flats : (Optional)"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/numbOfFlatsEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Number of floors : (Optional)"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/numbOfFloorsEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Number of lifts : (Optional)"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/numbOfLiftsEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Parking Area (sqft) :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/parkingAreaEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Location :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/locationEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Short Details : (Optional)"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/shortDetailsEditBuild"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="textLongMessage"
+                    android:maxLength="20"
+                    android:maxLines="4"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/updtBtn"
+        android:background="#FF9800"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <Button
+        android:id="@+id/updtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFA500"
+        android:text="Update Details"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".analyst.analysteditfrag.EditWorkerFragment"
+    android:backgroundTint="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/addWorkerInfoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="Edit Worker Info"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addWorkerInfoTxt"
+        android:background="#FF9800"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:id="@+id/addWorkerScrollViewRelLayout"
+        android:layout_below="@+id/addWorkerInfoTxt"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/addWorkerScrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Worker Id :"
+                    android:textColor="#1B1B1B"
+                    android:textColorLink="#00BCD4"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editWorkerWorkerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000000"
+                    android:textColorLink="#FF9800"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Building Id"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/editWorkerBuildingId"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Worker Name :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/editWorkerWorkerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:fontFamily="@font/bungee_inline"
+                    android:maxLength="14"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Salary :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/editWorkerSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:ems="10"
+                    android:maxLength="6"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="Job :"
+                    android:textColor="#1B1B1B"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/editWorkerJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext_border_color"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/bungee_inline"
+                    android:inputType="text"
+                    android:maxLength="14"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/updtWorkerAddBtn"
+        android:layout_marginBottom="4dp"
+        android:background="#FF9800"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <Button
+        android:id="@+id/updtWorkerAddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFA500"
+        android:text="Update Details"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

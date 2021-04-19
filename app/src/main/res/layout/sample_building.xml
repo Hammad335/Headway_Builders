@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/analystParentCardView"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:backgroundTint="#CCFF9800"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/analystBuildingImageView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/material_on_background_emphasis_medium"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/sample2" />
+
+        <TextView
+            android:id="@+id/analystBuildingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/analystBuildingImageView"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center_horizontal"
+            android:text="BUILDING NAME"
+            android:textAllCaps="true"
+            android:textColor="#A6000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
