@@ -39,15 +39,15 @@
 
     <TextView
         android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
         android:background="?android:attr/textColorHighlightInverse"
         android:backgroundTint="#8DED3D"
         android:fontFamily="@font/audiowide"
-            android:text="ANALYST"
+        android:text="ANALYST"
         android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"/>
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
 
 
     <LinearLayout

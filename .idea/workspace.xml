@@ -12,108 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f402a02e-e1eb-41b6-ba0e-25bde31b32c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/OnRefreshWorkerFragmentInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/hw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/status.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ask.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/AllWorkersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/AllWorkersFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/BuildingDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/BuildingDetailsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/AllWorkersAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/AllWorkersAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/BuildingAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/BuildingAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/WorkerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/adapters/WorkerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/AnalystActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/AnalystActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/WorkerDetailsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AddBuildingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AddBuildingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AddWorkerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AddWorkerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AnalystAddFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analystaddfrag/AnalystAddFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/AnalystEditFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/AnalystEditFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/EditBuildingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/EditBuildingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/EditWorkerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/analyst/analysteditfrag/EditWorkerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/databasehelper/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/databasehelper/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/AnalystLoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/AnalystLoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/ManagerLoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/main/ManagerLoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerAddFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerAddFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/codewithhamad/headwaybuilders/manager/ManagerProfileFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/blink_anim.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/bottom_animation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/bounce.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_right.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/fadeout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/lefttoright.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/mixed_anim.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/righttoleft.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/rotate.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/sample_anim.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/top_animation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/zoomin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/zoomout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_down_arrow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-anydpi/ic_up_arrow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_down_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_up_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/addanalyst.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/analyst_add.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/analyst_add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_down_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_up_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/sampleaddanalystbackground.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_down_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_up_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_down_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_up_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/sarpanch.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_building.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_worker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_worker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_workers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_workers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_analyst_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_analyst_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_analyst_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_analyst_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_building_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_building_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_building.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_building.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_worker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_worker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manager_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manager_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manager_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_manager_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_worker_detials.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sample_analyst.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sample_analyst.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,17 +153,33 @@
       <option name="presentableId" value="Default" />
       <updated>1619046343611</updated>
     </task>
+    <task id="LOCAL-00001" summary="Upgraded UI">
+      <created>1619377390065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619377390065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Upgraded UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgraded UI" />
   </component>
   <component name="WindowStateProjectService">
     <state x="63" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619216063088">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="63" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1619216063088" />
-    <state x="463" y="91" key="FileChooserDialogImpl" timestamp="1619219812981">
+    <state x="272" y="0" key="CommitChangelistDialog2" timestamp="1619377386518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="91" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619219812981" />
+    <state x="272" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1619377386518" />
+    <state x="463" y="91" key="FileChooserDialogImpl" timestamp="1619377484699">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="91" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1619377484699" />
     <state width="1322" height="363" key="GridCell.Tab.0.bottom" timestamp="1619217795803">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -274,6 +196,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1322" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619217795803" />
+    <state x="263" y="107" key="IDE.errors.dialog" timestamp="1619377278880">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="107" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1619377278880" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1619377394127">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1619377394127" />
     <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1619204997128">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
