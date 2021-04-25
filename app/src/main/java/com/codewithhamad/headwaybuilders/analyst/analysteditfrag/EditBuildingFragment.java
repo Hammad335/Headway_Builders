@@ -5,16 +5,13 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
-
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,11 +20,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;
 import com.codewithhamad.headwaybuilders.models.BuildingModel;
-
 import static android.app.Activity.RESULT_OK;
 import static com.codewithhamad.headwaybuilders.analyst.analystaddfrag.AddBuildingFragment.PICK_IMAGE_REQUEST;
 

@@ -3,24 +3,18 @@ package com.codewithhamad.headwaybuilders.analyst.analysteditfrag;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
-import android.provider.ContactsContract;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;
-import com.codewithhamad.headwaybuilders.models.BuildingModel;
 import com.codewithhamad.headwaybuilders.models.WorkerModel;
-
 import org.jetbrains.annotations.NotNull;
 
 public class EditWorkerFragment extends Fragment {

@@ -31,14 +31,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="480dp"
-        android:id="@+id/addWorkerScrollViewRelLayout"
         android:layout_below="@+id/addWorkerInfoTxt"
         android:layout_marginTop="20dp">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/addWorkerScrollView">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"

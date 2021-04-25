@@ -23,7 +23,6 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/analystName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/audiowide"
@@ -38,9 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:fontFamily="@font/audiowide"
                 android:text="Hammadullah"
-                android:textAllCaps="true"
                 android:textColor="#A6000000"
                 android:textSize="16sp"
                 android:textStyle="italic" />
@@ -56,7 +53,6 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/analystPass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/audiowide"
@@ -71,9 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:fontFamily="@font/audiowide"
                 android:text="Hammadullah"
-                android:textAllCaps="true"
                 android:textColor="#A6000000"
                 android:textSize="16sp"
                 android:textStyle="italic" />

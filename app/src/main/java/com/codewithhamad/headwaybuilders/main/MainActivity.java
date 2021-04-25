@@ -6,30 +6,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
-import android.widget.FrameLayout;
-
+import android.widget.Toast;
 import com.codewithhamad.headwaybuilders.R;
-import com.codewithhamad.headwaybuilders.analyst.analystaddfrag.AddBuildingFragment;
-import com.codewithhamad.headwaybuilders.analyst.analystaddfrag.AddWorkerFragment;
-import com.codewithhamad.headwaybuilders.analyst.analystaddfrag.AnalystAddFragment;
 import com.google.android.material.tabs.TabLayout;
-import com.iammert.library.readablebottombar.ReadableBottomBar;
-
 import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
 
-//  ReadableBottomBar readableBottomBar;
-//  FrameLayout frameLayout; // container for fragments used in this activity
-
   private ViewPager viewPager;
   private TabLayout tabLayout;
   private ViewPagerAdapter viewPagerAdapter;
+
+  private long backPressedTime;
+  private Toast backToast;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -81,5 +73,20 @@ public class MainActivity extends AppCompatActivity {
     public CharSequence getPageTitle(int position) {
       return titles.get(position);
     }
+  }
+
+
+  @Override
+  public void onBackPressed() {
+    if(backPressedTime+2000>System.currentTimeMillis()){
+      backToast.cancel();
+      super.onBackPressed();
+      return;
+    }
+    else{
+      backToast= Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
+      backToast.show();
+    }
+    backPressedTime= System.currentTimeMillis();
   }
 }

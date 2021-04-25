@@ -2,12 +2,14 @@ package com.codewithhamad.headwaybuilders.manager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.FrameLayout;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.HomeFragment;
+import com.codewithhamad.headwaybuilders.main.MainActivity;
 import com.iammert.library.readablebottombar.ReadableBottomBar;
 
 public class ManagerActivity extends AppCompatActivity {
@@ -53,5 +55,29 @@ public class ManagerActivity extends AppCompatActivity {
                 transaction.commit();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog deleteDialog = new AlertDialog.Builder(this)
+                .setTitle("Return Message")
+                .setMessage("Are you sure you want to go back to login screen ?")
+                .setIcon(R.drawable.ic_ask)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent= new Intent(ManagerActivity.this, MainActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                    }
+                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).create();
+        deleteDialog.show();
+
+
     }
 }

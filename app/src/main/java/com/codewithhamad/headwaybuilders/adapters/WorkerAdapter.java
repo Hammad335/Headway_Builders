@@ -6,14 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.models.WorkerModel;
-
 import java.util.ArrayList;
 
 public class WorkerAdapter extends RecyclerView.Adapter<WorkerAdapter.ViewHolder> {

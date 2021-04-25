@@ -4,26 +4,21 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.BuildingDetailsFragment;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;
 import com.codewithhamad.headwaybuilders.models.BuildingModel;
 import com.google.gson.Gson;
-
 import java.util.ArrayList;
 
 public class BuildingAdapter extends RecyclerView.Adapter<BuildingAdapter.ViewHolder> {
@@ -62,7 +57,6 @@ public class BuildingAdapter extends RecyclerView.Adapter<BuildingAdapter.ViewHo
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, buildings.get(position).getBuildingName() + " selected", Toast.LENGTH_SHORT).show();
 
                 // sending data/clickedBuildingModel to BuildingDetailsFragment
                 Gson gson = new Gson();
@@ -91,37 +85,35 @@ public class BuildingAdapter extends RecyclerView.Adapter<BuildingAdapter.ViewHo
                 @Override
                 public boolean onLongClick(View v) {
 
-                    if(context.toString().toLowerCase().contains("manageractivity")) {
+                    AlertDialog deleteDialog = new AlertDialog.Builder(context)
+                            .setTitle("Delete Message")
+                            .setMessage("Are you sure you want to remove this building from database ?")
+                            .setIcon(R.drawable.ic_delete)
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
 
-                        AlertDialog deleteDialog = new AlertDialog.Builder(context)
-                                .setTitle("Delete Message")
-                                .setMessage("Are you sure you want to remove this building from database ?")
-                                .setIcon(R.drawable.ic_delete)
-                                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-
-                                        try {
-                                            if (new DatabaseHelper(context).deleteRecByIdFromBuildingsTable(buildingModel.getBuildingId())) {
-                                                Toast.makeText(context, "Building deleted from database successfully.", Toast.LENGTH_SHORT).show();
-                                                buildings.remove(buildingModel);
-                                                notifyDataSetChanged();
-                                            } else {
-                                                Toast.makeText(context, "Unable to delete record from buildings table", Toast.LENGTH_SHORT).show();
-                                            }
-                                        } catch (Exception e) {
-                                            Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    try {
+                                        if (new DatabaseHelper(context).deleteRecByIdFromBuildingsTable(buildingModel.getBuildingId())) {
+                                            Toast.makeText(context, "Building deleted from database successfully.", Toast.LENGTH_SHORT).show();
+                                            buildings.remove(buildingModel);
+                                            notifyDataSetChanged();
+                                        } else {
+                                            Toast.makeText(context, "Unable to delete record from buildings table", Toast.LENGTH_SHORT).show();
                                         }
+                                    } catch (Exception e) {
+                                        Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
 
-                                    }
-                                }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        dialog.dismiss();
-                                    }
-                                }).create();
-                        deleteDialog.show();
-                    }
+                                }
+                            }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            }).create();
+                    deleteDialog.show();
+
                     return true;
                 }
             });

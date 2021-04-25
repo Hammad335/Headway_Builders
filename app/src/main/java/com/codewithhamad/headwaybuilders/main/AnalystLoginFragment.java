@@ -2,9 +2,7 @@ package com.codewithhamad.headwaybuilders.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +14,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.analyst.AnalystActivity;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;

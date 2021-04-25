@@ -2,9 +2,7 @@ package com.codewithhamad.headwaybuilders.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.codewithhamad.headwaybuilders.R;
-import com.codewithhamad.headwaybuilders.analyst.AnalystActivity;
 import com.codewithhamad.headwaybuilders.manager.ManagerActivity;
 
 
@@ -49,25 +47,26 @@ public class ManagerLoginFragment extends Fragment {
         passwordEditTxt.startAnimation(fadeIn);
         userNameImageView.startAnimation(fadeIn);
         passwordImageView.startAnimation(fadeIn);
-//        logo.startAnimation(fadeIn);
         signInBtn.startAnimation(fadeIn);
-//        welcomeText.startAnimation(fadeIn);
 
         signInBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-//                if (userNameEditTxt.getText().length() == 0){
-//                    userNameEditTxt.setError("Name is required.");
-//                    return;
-//                }
-//                else if(passwordEditTxt.getText().length()==0) {
-//                    passwordEditTxt.setError("Password is required.");
-//                    return;
-//                }
+                if (userNameEditTxt.getText().length() == 0){
+                    userNameEditTxt.setError("Name is required.");
+                    return;
+                }
+                else if(passwordEditTxt.getText().length()==0) {
+                    passwordEditTxt.setError("Password is required.");
+                    return;
+                }
 
-
-                startActivity(new Intent(getActivity(), ManagerActivity.class));
+                if(userNameEditTxt.getText().toString().equalsIgnoreCase("Headway") &&
+                    passwordEditTxt.getText().toString().equalsIgnoreCase("headway12"))
+                        startActivity(new Intent(getActivity(), ManagerActivity.class));
+                else
+                    Toast.makeText(getContext(), "Invalid user name or password.", Toast.LENGTH_SHORT).show();
             }
         });
 

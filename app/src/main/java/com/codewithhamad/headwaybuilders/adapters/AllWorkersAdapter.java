@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+import com.codewithhamad.headwaybuilders.OnRefreshWorkerFragmentInterface;
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;
 import com.codewithhamad.headwaybuilders.models.WorkerModel;
@@ -21,12 +21,12 @@ public class AllWorkersAdapter extends RecyclerView.Adapter<AllWorkersAdapter.Vi
 
     Context context;
     ArrayList<WorkerModel> workers;
-    String callingActivity;
+    OnRefreshWorkerFragmentInterface onRefreshWorkerFragmentInterface;
 
-    public AllWorkersAdapter(Context context, ArrayList<WorkerModel> workers, String callingActivity){
+    public AllWorkersAdapter(Context context, ArrayList<WorkerModel> workers, OnRefreshWorkerFragmentInterface onRefreshWorkerFragmentInterface){
         this.context= context;
         this.workers= workers;
-        this.callingActivity= callingActivity;
+        this.onRefreshWorkerFragmentInterface = onRefreshWorkerFragmentInterface;
     }
 
 
@@ -66,6 +66,7 @@ public class AllWorkersAdapter extends RecyclerView.Adapter<AllWorkersAdapter.Vi
                                         Toast.makeText(context, "Worker deleted from database successfully.", Toast.LENGTH_SHORT).show();
                                         workers.remove(workerModel);
                                         notifyDataSetChanged();
+                                        onRefreshWorkerFragmentInterface.refreshView();
                                     }
                                     else {
                                         Toast.makeText(context, "Unable to delete record from worker table", Toast.LENGTH_SHORT).show();

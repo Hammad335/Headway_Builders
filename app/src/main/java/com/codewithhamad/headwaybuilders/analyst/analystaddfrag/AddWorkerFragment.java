@@ -1,10 +1,7 @@
 package com.codewithhamad.headwaybuilders.analyst.analystaddfrag;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -14,13 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.codewithhamad.headwaybuilders.R;
 import com.codewithhamad.headwaybuilders.databasehelper.DatabaseHelper;
-import com.codewithhamad.headwaybuilders.models.BuildingModel;
 import com.codewithhamad.headwaybuilders.models.WorkerModel;
 
-import java.util.ArrayList;
 
 public class AddWorkerFragment extends Fragment {
 

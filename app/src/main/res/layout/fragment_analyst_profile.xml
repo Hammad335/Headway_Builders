@@ -1,80 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/blur"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".analyst.AnalystProfileFragment">
 
     <ImageView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="130sp"
-        android:src="@drawable/sample2"
-        android:layout_marginTop="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Headway-Builders Community"
-        android:textSize="25sp"
-        android:textAlignment="center"/>
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sample2" />
 
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/manager"
-        android:layout_marginTop="40dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#4D000000"
+        android:src="@drawable/hw" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="500dp"
+        android:layout_height="451dp"
+        android:background="@drawable/mobile">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="102dp"
+            android:layout_height="85dp"
+            android:src="@drawable/manager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.371" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="User Name  : "
-            android:textSize="20sp" />
+            android:layout_height="19dp"
+            android:layout_marginEnd="208dp"
+            android:background="@drawable/building_details_scrollview_border_color"
+            android:backgroundTint="#66009688"
+            android:fontFamily="@font/audiowide"
+            android:text="ANALYST"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="174dp"
+            android:background="@drawable/edittext_border_color"
+            android:fontFamily="@font/audiowide"
+            android:text="USERNAME:"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.27" />
 
         <TextView
             android:id="@+id/analystUserNameProfileFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hammad"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:layout_marginTop="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password     : "
-            android:textSize="20sp" />
+            android:layout_marginStart="6dp"
+            android:text="Waiz"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.265" />
 
         <TextView
             android:id="@+id/analystPassProfileFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="pass123"
-            android:textSize="25sp"
-            android:textStyle="bold"/>
+            android:layout_marginStart="6dp"
+            android:text="123"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.407" />
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="174dp"
+            android:background="@drawable/edittext_border_color"
+            android:fontFamily="@font/audiowide"
+            android:text="PASSWORD:"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.409" />
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="165dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="72dp"
+            android:background="#99000000"
+            android:src="@drawable/status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>

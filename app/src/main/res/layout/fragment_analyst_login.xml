@@ -32,18 +32,17 @@
 
 
     <ImageView
-        android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="116dp"
         android:layout_marginTop="50dp"
         app:srcCompat="@drawable/manager" />
 
     <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
         android:background="?android:attr/textColorHighlightInverse"
+        android:backgroundTint="#8DED3D"
         android:fontFamily="@font/audiowide"
             android:text="ANALYST"
         android:textAlignment="center"
@@ -107,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
             app:hintTextColor="@color/green"
             android:textColorHint="@color/white"
             app:boxStrokeColor="@color/white">

@@ -421,6 +421,85 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    // get all records from workers table by building id
+    public ArrayList<WorkerModel> getAllFromWorkersTableByBuildingId(int buildingId){
+
+        try{
+            SQLiteDatabase sqLiteDatabaseReadableObj= this.getReadableDatabase();
+            ArrayList<WorkerModel> workers = new ArrayList<>();
+
+            String getById= "SELECT * FROM " + table_2_workers + " WHERE "+COLUMN_WORKER_BUILDING_ID+" = "  + buildingId;
+            Cursor cursor= sqLiteDatabaseReadableObj.rawQuery(getById, null);
+
+            if(cursor.getCount() != 0){
+                while (cursor.moveToNext()){
+
+                    int wId= cursor.getInt(0);
+                    String name= cursor.getString(1);
+                    String job= cursor.getString(2);
+                    int sal= cursor.getInt(3);
+                    int bId= cursor.getInt(4);
+
+                    workers.add(new WorkerModel(wId, bId, name, job, sal));
+                }
+                cursor.close();
+                sqLiteDatabaseReadableObj.close();
+                return workers;
+            }
+            else{
+                Toast.makeText(context, "Worker does not exist in database", Toast.LENGTH_SHORT).show();
+                cursor.close();
+                sqLiteDatabaseReadableObj.close();
+                return null;
+            }
+
+        }
+        catch (Exception e){
+            Toast.makeText(context, "Error fetching data form worker table", Toast.LENGTH_SHORT).show();
+            return null;
+        }
+    }
+
+    // get all records from workers table by building id and order
+    public ArrayList<WorkerModel> getAllFromWorkersTableByBuildingId(int buildingId, String order){
+
+        try{
+            SQLiteDatabase sqLiteDatabaseReadableObj= this.getReadableDatabase();
+            ArrayList<WorkerModel> workers = new ArrayList<>();
+
+            String getById= "SELECT * FROM " + table_2_workers + " WHERE "+COLUMN_WORKER_BUILDING_ID+" = "  + buildingId + " ORDER BY " + order;
+            Cursor cursor= sqLiteDatabaseReadableObj.rawQuery(getById, null);
+
+            if(cursor.getCount() != 0){
+                while (cursor.moveToNext()){
+
+                    int wId= cursor.getInt(0);
+                    String name= cursor.getString(1);
+                    String job= cursor.getString(2);
+                    int sal= cursor.getInt(3);
+                    int bId= cursor.getInt(4);
+
+                    workers.add(new WorkerModel(wId, bId, name, job, sal));
+                }
+                cursor.close();
+                sqLiteDatabaseReadableObj.close();
+                return workers;
+            }
+            else{
+                Toast.makeText(context, "Worker does not exist in database", Toast.LENGTH_SHORT).show();
+                cursor.close();
+                sqLiteDatabaseReadableObj.close();
+                return null;
+            }
+
+        }
+        catch (Exception e){
+            Toast.makeText(context, "Error fetching data form worker table", Toast.LENGTH_SHORT).show();
+            return null;
+        }
+    }
+
+
     // update record in worker table
     public void updateRecordInToWorkerTable(WorkerModel workerModel){
         SQLiteDatabase sqLiteDatabaseWritableObj = this.getWritableDatabase();
@@ -506,6 +585,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return null;
         }
     }
+
+
 
 
     // check whether record exists in analysts table or not by analystName
@@ -659,6 +740,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         try {
             // delete() method returns the number of affected rows
             int affectedRows = sqLiteDatabaseReadableObj.delete(table_2_workers, COLUMN_WORKER_ID + "=" + id, null);
+            sqLiteDatabaseReadableObj.close();
             return affectedRows > 0;
         }
         catch (Exception e){
@@ -667,6 +749,69 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
         sqLiteDatabaseReadableObj.close();
         return false;
+    }
+
+    // return total number of records in worker table
+    public int getTotalWorkersFromWorkerTable() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        String countQuery = "SELECT  * FROM " + table_2_workers;
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = -1;
+        if (cursor != null)
+            if (cursor.getCount() > 0)
+                count = cursor.getCount();
+
+            cursor.close();
+            db.close();
+            return count;
+    }
+
+    // return record count by building id
+    public int getTotalWorkersFromWorkerTableByBuildingId(int buildingId){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String countQuery = "SELECT  * FROM " + table_2_workers + " WHERE " + COLUMN_WORKER_BUILDING_ID + "=" + buildingId;
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = -1;
+        if (cursor != null)
+            if (cursor.getCount() > 0)
+                count = cursor.getCount();
+
+        cursor.close();
+        db.close();
+        return count;
+    }
+
+    // return total salary given in worker table
+    public double getTotalSalaryFromWorkerTable(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sumQuery= "SELECT SUM(" + COLUMN_WORKER_SAL + ") as Total FROM " + table_2_workers;
+        Cursor cursor = db.rawQuery(sumQuery, null);
+
+        double s= -1;
+        if(cursor.moveToFirst())
+            s = cursor.getDouble(0);
+
+        cursor.close();
+        db.close();
+        return s;
+
+    }
+
+    // return total salary given in worker table by building id
+    public double getTotalSalaryFromWorkerTableByBuildingId(int buildindId){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String sumQuery= "SELECT SUM(" + COLUMN_WORKER_SAL + ") as Total FROM " + table_2_workers + " WHERE " + COLUMN_WORKER_BUILDING_ID + "=" + buildindId;
+        Cursor cursor = db.rawQuery(sumQuery, null);
+
+        double s= -1;
+        if(cursor.moveToFirst())
+            s = cursor.getDouble(0);
+
+        cursor.close();
+        db.close();
+        return s;
+
     }
 
 
